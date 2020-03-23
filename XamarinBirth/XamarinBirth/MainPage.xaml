@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinBirth.MainPage">
+
+    <StackLayout Margin="30">
+        <Image Source="calendar.png" 
+               WidthRequest="120"
+               HeightRequest="120"
+               Margin="0,15,0,0"
+               />
+        <DatePicker
+            x:Name="mainDatePicker"
+            Margin="0,130,0,0"
+            WidthRequest="200"
+            DateSelected="DatePicker_DateSelected"
+            HorizontalOptions="Center"
+            >
+        </DatePicker>
+
+        <Label x:Name="main"  
+               Text="0"
+               HorizontalOptions="Center"
+               Margin="0,150,0,0"
+               FontSize="24"
+               FontAttributes="Bold"
+               />
+        <Label x:Name="mainYear"  
+               Text=""
+               HorizontalOptions="Center"
+               Margin="0,22,0,0"
+               FontSize="20"
+               />
+        <Label x:Name="mainDay"  
+               Text=""
+               HorizontalOptions="Center"
+               Margin="0,22,0,0"
+               FontSize="20"
+               />
+    </StackLayout>
+
+</ContentPage>
